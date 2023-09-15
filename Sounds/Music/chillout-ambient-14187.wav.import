@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/chillout-ambient-14187.wav-82aa5ac3fa5c3e5a0e34f802915e7252.sample"
+
+[deps]
+
+source_file="res://Sounds/Music/chillout-ambient-14187.wav"
+dest_files=[ "res://.import/chillout-ambient-14187.wav-82aa5ac3fa5c3e5a0e34f802915e7252.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

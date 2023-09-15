@@ -1,0 +1,237 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Fonts/Leto Text Sans Defect.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/Main.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Materials/Label.tres" type="StyleBox" id=3]
+[ext_resource path="res://Scenes/Materials/MainFont.tres" type="DynamicFont" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.752941, 0.792157, 0.729412, 1 )
+border_color = Color( 0.262745, 0.576471, 0.227451, 1 )
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 120, 328 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.713726, 0.784314, 0.729412, 1 )
+border_color = Color( 0.0666667, 0.227451, 0.0352941, 1 )
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 120, 328 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 300
+outline_size = 10
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.721569, 0.733333, 0.376471, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.8, 0.807843, 0.576471, 1 )
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.827451, 0.843137, 0.372549, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.8, 0.807843, 0.576471, 1 )
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.666667, 0.670588, 0.552941, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.8, 0.807843, 0.576471, 1 )
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="Node2D" parent="."]
+z_index = -100
+
+[node name="ColorRect" type="ColorRect" parent="BG"]
+margin_left = -3912.0
+margin_top = -208.0
+margin_right = 4016.0
+margin_bottom = 3448.0
+color = Color( 0.580392, 0.631373, 0.592157, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 0.989
+anchor_bottom = 0.993
+margin_right = 7.91998
+margin_bottom = 7.55994
+custom_constants/margin_right = 15
+custom_constants/margin_top = 15
+custom_constants/margin_left = 15
+custom_constants/margin_bottom = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MarginContainer"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 705.0
+margin_bottom = 80.0
+size_flags_vertical = 0
+custom_colors/font_color = Color( 0.933333, 1, 0.898039, 1 )
+custom_fonts/font = ExtResource( 4 )
+custom_styles/normal = ExtResource( 3 )
+text = "Семье ивановых срочно понадобились деньги на операцию. От каких расходов стоит отказаться?"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+anchor_left = 0.021
+anchor_top = 0.207
+anchor_right = 0.356
+anchor_bottom = 0.815
+margin_left = -0.120001
+margin_top = 0.439987
+margin_right = -0.320007
+margin_bottom = -0.200073
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="MarginContainer2"]
+margin_right = 241.0
+margin_bottom = 655.0
+custom_styles/disabled = SubResource( 1 )
+disabled = true
+enabled_focus_mode = 0
+
+[node name="Not_Area" type="Area2D" parent="MarginContainer2/Button" groups=["-"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MarginContainer2/Button/Not_Area"]
+position = Vector2( 120, 328 )
+shape = SubResource( 2 )
+
+[node name="MarginContainer3" type="MarginContainer" parent="."]
+anchor_left = 0.644
+anchor_top = 0.207
+anchor_right = 0.978
+anchor_bottom = 0.815
+margin_left = 0.319946
+margin_top = 0.439987
+margin_right = 0.839966
+margin_bottom = -0.200073
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="MarginContainer3"]
+margin_right = 241.0
+margin_bottom = 655.0
+custom_styles/disabled = SubResource( 3 )
+disabled = true
+enabled_focus_mode = 0
+
+[node name="Yes_area" type="Area2D" parent="MarginContainer3/Button2" groups=["+"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MarginContainer3/Button2/Yes_area"]
+position = Vector2( 120, 328 )
+shape = SubResource( 4 )
+
+[node name="MarginContainer4" type="MarginContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -248.0
+margin_top = -68.0
+margin_right = 2076.0
+margin_bottom = 450.0
+rect_scale = Vector2( 0.1, 0.1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="MarginContainer4"]
+margin_right = 2324.0
+margin_bottom = 518.0
+custom_fonts/font = SubResource( 8 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+text = "Готово"
+
+[node name="+" type="Label" parent="."]
+anchor_left = 0.644
+anchor_top = 0.148
+anchor_right = 0.978
+anchor_bottom = 0.193
+margin_left = 0.319946
+margin_top = 0.160004
+margin_right = -0.160034
+margin_bottom = -0.440002
+custom_fonts/font = ExtResource( 4 )
+custom_styles/normal = ExtResource( 3 )
+text = "Оставить"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="-" type="Label" parent="."]
+anchor_left = 0.022
+anchor_top = 0.148
+anchor_right = 0.356
+anchor_bottom = 0.193
+margin_left = 0.159999
+margin_top = 0.160004
+margin_right = -0.320007
+margin_bottom = -0.440002
+custom_fonts/font = ExtResource( 4 )
+custom_styles/normal = ExtResource( 3 )
+text = "Отказаться"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="area_entered" from="MarginContainer2/Button/Not_Area" to="." method="_on_Not_Area_area_entered"]
+[connection signal="area_entered" from="MarginContainer3/Button2/Yes_area" to="." method="_on_Yes_area_area_entered"]
+[connection signal="pressed" from="MarginContainer4/Button" to="." method="_on_Button_pressed"]

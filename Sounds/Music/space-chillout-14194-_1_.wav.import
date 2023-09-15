@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/space-chillout-14194-_1_.wav-afc154f60e1603295e4fcf09b2e80491.sample"
+
+[deps]
+
+source_file="res://Sounds/Music/space-chillout-14194-_1_.wav"
+dest_files=[ "res://.import/space-chillout-14194-_1_.wav-afc154f60e1603295e4fcf09b2e80491.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

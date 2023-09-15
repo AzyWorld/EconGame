@@ -1,0 +1,198 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Fonts/Leto Text Sans Defect.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scenes/Materials/MainFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Scenes/Materials/Label.tres" type="StyleBox" id=3]
+[ext_resource path="res://Scripts/Budjets.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.713726, 0.784314, 0.729412, 1 )
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.721569, 0.733333, 0.376471, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.8, 0.807843, 0.576471, 1 )
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.827451, 0.843137, 0.372549, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.8, 0.807843, 0.576471, 1 )
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.666667, 0.670588, 0.552941, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.8, 0.807843, 0.576471, 1 )
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="DynamicFont" id=7]
+size = 40
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.721569, 0.733333, 0.376471, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.8, 0.807843, 0.576471, 1 )
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.827451, 0.843137, 0.372549, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.8, 0.807843, 0.576471, 1 )
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.666667, 0.670588, 0.552941, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.8, 0.807843, 0.576471, 1 )
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+
+[node name="Budjets" type="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 40.0
+margin_bottom = 40.0
+color = Color( 0.580392, 0.631373, 0.592157, 1 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.3
+margin_left = 2.0
+margin_right = -2.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/normal = ExtResource( 3 )
+text = "Зарплата родителей составляет 125000, стипендия старшего брата составляет 3500. Обычно семья тратит за месяц 75000, но в этом месяце они решили купить гитару за 51000. Сколько денег у них останется?"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="."]
+anchor_left = 0.326474
+anchor_top = 0.428429
+anchor_right = 0.715474
+anchor_bottom = 0.485429
+margin_left = -0.119995
+margin_top = 0.159973
+margin_right = -0.23999
+margin_bottom = 0.320007
+focus_mode = 1
+custom_colors/cursor_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ToMenu" type="Button" parent="."]
+anchor_left = 0.252632
+anchor_top = 0.85
+anchor_right = 0.758263
+anchor_bottom = 0.914143
+margin_right = -0.280014
+margin_bottom = 0.159996
+custom_fonts/font = SubResource( 3 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+text = "В меню"
+__meta__ = {
+"_edit_use_anchors_": true,
+"_editor_description_": ""
+}
+
+[node name="Button2" type="Button" parent="."]
+anchor_left = 0.252632
+anchor_top = 0.75
+anchor_right = 0.758263
+anchor_bottom = 0.821286
+margin_right = -0.280014
+margin_bottom = 0.159996
+custom_fonts/font = SubResource( 7 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+text = "Ответ"
+__meta__ = {
+"_edit_use_anchors_": true,
+"_editor_description_": ""
+}
+
+[node name="Answer" type="Label" parent="."]
+anchor_left = 0.05
+anchor_top = 0.577679
+anchor_right = 0.95
+anchor_bottom = 0.629
+margin_right = -6.10352e-05
+margin_bottom = -0.47998
+custom_fonts/font = ExtResource( 2 )
+custom_styles/normal = ExtResource( 3 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[connection signal="pressed" from="ToMenu" to="." method="_on_ToMenu_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
